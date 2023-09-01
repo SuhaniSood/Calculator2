@@ -2,8 +2,6 @@ package com.example.newcalculaterapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,16 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val textViewFragment = TextView()
-        val buttonFragement = Buttons()
+        val buttonFragement = Calculator()
+
 
         supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fragment_text_view, textViewFragment)
-            commit()
-        }
-
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fragment_buttons, buttonFragement)
+            replace(R.id.fragment_calculator, buttonFragement)
             commit()
         }
 

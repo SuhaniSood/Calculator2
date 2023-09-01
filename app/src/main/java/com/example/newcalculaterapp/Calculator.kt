@@ -2,13 +2,11 @@ package com.example.newcalculaterapp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 
-class Buttons : Fragment(R.layout.fragment_buttons) {
+class Calculator : Fragment(R.layout.fragment_calculator) {
 
     private var button1 : Button? = null
     private var button2 : Button? = null

@@ -10,12 +10,7 @@
     android:background="@color/black">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="200dp" />
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_buttons"
+        android:id="@+id/fragment_calculator"
         android:layout_width="match_parent"
         android:layout_height="600dp"
         />
